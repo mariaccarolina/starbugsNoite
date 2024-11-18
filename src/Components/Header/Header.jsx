@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import { HeaderStyle } from "./style";
+import { HeaderStyle, StyleLink, Ul } from "./style";
 
 export default function Header() {
     return (
@@ -8,17 +8,17 @@ export default function Header() {
         {/* <img src="src\assets\images\logo.png" alt="logomarca" /> */}
         <img src={logo} alt="logomarca" />
         <nav>
-          <ul>
+          <Ul>
             <li>
-              <Link to="/">Home</Link>
+              <StyleLink to="/">Home</StyleLink>
             </li>
             <li>
-              <Link to="/novidades">Novidades</Link>
+              <StyleLink to="/novidades">Novidades</StyleLink>
             </li>
             <li>
-              <Link to="/sobre">Sobre</Link>
+              <StyleLink to="/sobre">Sobre</StyleLink>
             </li>
-          </ul>
+          </Ul>
         </nav>
       </HeaderStyle>
     );
